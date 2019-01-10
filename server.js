@@ -25,9 +25,9 @@ var routes = require("./controllers/burgers_controller");
 app.use(routes);
 
 // listen on port 3000
-var PORT = process.env.PORT || 3000;
-db.sequelize.sync().then(function() {
-  app.listen(PORT, function() {
+var PORT = process.env.PORT || 3001;
+db.sequelize.sync().then(function () {
+  app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
   });
 });
